@@ -1,0 +1,17 @@
+  0:      1:      2:      3:      4:
+ aaaa    ....    aaaa    aaaa    ....
+b    c  .    c  .    c  .    c  b    c      1: len == 2
+b    c  .    c  .    c  .    c  b    c      4: len == 4
+ ....    ....    dddd    dddd    dddd       7: len == 3
+e    f  .    f  e    .  .    f  .    f      8: len == 7
+e    f  .    f  e    .  .    f  .    f
+ gggg    ....    gggg    gggg    ....
+                                            6: len == 6 and 1 not in
+  5:      6:      7:      8:      9:        9: len == 6 and 4 not in
+ aaaa    aaaa    aaaa    aaaa    aaaa       0: len == 6 and not other two
+b    .  b    .  .    c  b    c  b    c      
+b    .  b    .  .    c  b    c  b    c      3: len == 5 and 1 in and in 9
+ dddd    dddd    ....    dddd    dddd       5: len == 5 and in 9 and not 3
+.    f  e    f  .    f  e    f  .    f      2: len == 5 and not other two
+.    f  e    f  .    f  e    f  .    f
+ gggg    gggg    ....    gggg    gggg
